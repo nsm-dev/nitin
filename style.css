@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    user-select: none;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(bck2.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.header nav{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 600;
+    padding: 10px 0;
+    animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+    0%{
+        color: #fff;
+    }
+    50%{
+        color: #f44336;
+    }
+
+    100%{
+        color: #fff;
+    }
+}
+
+.one{
+    font-size: 1.2em;
+    color: #fff;
+    padding: 100px 8px 0px 8px;
+}
+
+.btn{
+    position: absolute;
+    top: 400px;
+    left: 114px;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 5px 10px;
+    width: 100px;
+    transition: 0.5s;
+}
+
+.btn:hover{
+    background-color: #f44336;
+}
+
+nav::first-letter{
+    color: #f44336;
+}
+
+.portfolio{
+    height: 100vh;
+}
+
+p{
+    text-align: center;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.img{
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(300px, 300px));
+    column-gap: 20px;
+    row-gap: 20px;
+}
+
+img{
+    width: 300px;
+    height: 550px;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.5s;
+    background-position: top;
+}
+
+.img .three,.four{
+    filter: blur(2px);
+    -webkit-filter: blur(2px);
+}
+
+.skills{
+    height: 100vh;
+    margin-top: 1750px;
+}
+
+.container{
+    margin-top: 150px;
+    display: flex-box;
+    text-align: center;
+}
+
+.html,.css,.php,.js{
+    display: flex;
+    padding: 0px 10px;
+    font-size: 1.5em;
+    margin-top: 15px;
+}
+
+.html div,.css div,.php div,.js div{
+    position: absolute;
+    left: 120px;
+}
+
+.html div{
+    height: 2px;
+    width: 180px;
+    background-color: #f44336;
+}
+.css div{
+    height: 2px;
+    width: 170px;
+    background-color: #38E54D;
+}
+.php div{
+    height: 2px;
+    width: 150px;
+    background-color: #FFDE00;
+}
+
+.js div{
+    height: 2px;
+    width: 160px;
+    background-color: #277BC0;
+}
+
+@media(max-width: 700px) {
+
+}
